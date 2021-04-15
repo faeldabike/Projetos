@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form2.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="titulo">Cadastro de Funcionários</h1>
+            <p id="subtitulo">Insira suas informações</p>
+        </div>
+    </header>
+    <br>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Nome:</strong></label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label><strong>Sobrenome:</strong></label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>E-mail:</strong></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label><strong>Qual seu setor ?</strong></label><br>
+            <label>
+            <input type="radio" name="varejo" value="frentedeloja">Frente de Loja
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="mercearia">Mercearia
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="frios">Frios
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="açougue">Açougue
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="padaria">Padaria
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="bazar">Bazar
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="deposito">Depósito
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="gerencia">Gerência
+            </label>
+            <label>
+                <input type="radio" name="varejo" value="recursoshumanos">Recursos Humanos
+            </label>
+        </div>
+
+        <div>
+            <br>
+            <label for="anosEmpresa"><strong>Quantos anos de empresa ?</strong></label>
+            <Select id="anosEmpresa"><br>
+                <option selected disabled value="">Selecione...</option>
+                <option>1 ano</option>
+                <option>2 anos</option>
+                <option>3 anos</option>
+                <option>4 anos</option>
+                <option>5 anos</option>
+            </Select>
+        </div>
+
+        <br>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Por quais setores você ja passou ?</strong></label>
+                <input type="checkbox" id="setores" name="frentedeloja" value="frentedeloja">
+                <label for="frentedeloja">Frente de Loja</label>
+                <input type="checkbox" id="setores" name="mercearia" value="mercearia">
+                <label for="mercearia">Mercearia</label>
+                <input type="checkbox" id="setores" name="frios" value="frios">
+                <label for="frios">Frios</label>
+                <input type="checkbox" id="setores" name="açougue" value="açougue">
+                <label for="açougue">Açougue</label>
+                <input type="checkbox" id="setores" name="padaria" value="padaria">
+                <label for="padaria">Padaria</label>
+                <input type="checkbox" id="setores" name="bazar" value="bazar">
+                <label for="bazar">Bazar</label>
+                <input type="checkbox" id="setores" name="deposito" value="deposito">
+                <label for="deposito">Depósito</label>
+                <input type="checkbox" id="setores" name="gerencia"  name=""value="gerencia">
+                <label for="gerencia">Gerência</label>
+                <input type="checkbox" id="setores" name="recursoshumanos" value="recursoshumanos">
+                <label for="recursoshumanos">Recursos Humanos</label>
+            </div>
+        </fieldset><br>
+
+        <div class="campo">
+            <label><strong>Descreva sua experiência como colaborador:</strong></label>
+            <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea>
+        </div>
+    </form>
+
+    <br><br><button class="botao">Concluido</button>
+    <footer>
+        <br>
+        <p>Todos os Direitos Reservados para Rafael Cavalcante</p>
+    </footer>
+</body>
+</html>

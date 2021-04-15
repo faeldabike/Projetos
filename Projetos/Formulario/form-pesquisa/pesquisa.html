@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form-pesquisa/pesquisa.css">
+    <title>Pesquisa de satisfação</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="titulo">Pesquisa de Satisfação</h1>
+            <p id="subtitulo">Nos ajude a melhorar o atendimento:</p>
+            <br>    
+        </div>
+    </header>
+    
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required/>
+            </div>
+            <div class="campo">
+                <label><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required/>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>E-mail:</strong></label>
+            <input type="email" name="email" id="email" required/>
+        </div>
+
+        <div class="campo">
+            <label><strong>Em uma escala de 1 à 5,<br>Como foi sua satisfação com o atendimento ?</strong></label>
+            <label>
+                <input type="radio" name="desempenho" value="desempenho" />1
+            </label>
+            <label>
+                <input type="radio" name="desempenho" value="desempenho" />2
+            </label>
+            <label>
+                <input type="radio" name="desempenho" value="desempenho" />3
+            </label>
+            <label>
+                <input type="radio" name="desempenho" value="desempenho" />4
+            </label>
+            <label>
+                <input type="radio" name="desempenho" value="desempenho" />5
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="tempoAtendimento"><strong>Quanto tempo levou seu atendimento ?</strong></label>
+            <select name="tempoAtendimento" id="tempoAtendimento">
+                <option value="" disabled selected>Escolha...</option>
+                <option value="">1 hora ou menos</option>
+                <option value="">2 horas</option>
+                <option value="">3 horas</option>
+                <option value="">4 horas ou mais</option>
+            </select>
+        </div><br>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>O que mais lhe agradou no atendimento ?</strong></label><br>
+                <input type="checkbox" id="agradou" name="agradou" value="atendimentorapido">
+                <label for="atendimentorapido">Atendimento Rapido</label>    
+                <input type="checkbox" id="agradou" name="agradou" value="clareza">
+                <label for="clareza">Clareza</label>    
+                <input type="checkbox" id="agradou" name="agradou" value="educacao">
+                <label for="educacao">Educação</label>    
+                <input type="checkbox" id="agradou" name="agradou" value="resolucao">
+                <label for="resolucao">Resolução do Problema</label>    
+                <input type="checkbox" id="agradou" name="agradou" value="eficiencia">
+                <label for="eficiencia">Eficiência</label>    
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Fale um pouco sobre o que você achou do atendimento:</strong></label><br>
+            <textarea name="opiniao" id="opiniao" rows="6"></textarea>
+        </div>
+
+        <button class="botao">Concluido</button>
+    </form>
+    <footer>
+        <p>Todos os Direitos Reservados para Rafael Cavalcante</p>
+    </footer>
+</body>
+</html>
