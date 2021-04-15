@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class Animaw{
+                constructor(nome){
+                    this.nome = nome;
+                }
+                printNome(){
+                    return this.nome
+                }
+
+            }
+
+            class Cachorro extends Animaw{
+                constructor(nome){
+                    super(nome);
+                    this.raca = 'bulldog';
+                }
+
+                printRaca(){
+                    return this.raca;
+                }
+            }
+
+            cachorro = new Cachorro('rafael')
+
+            alert(cachorro.printNome());
+            
+            alert(cachorro.printRaca());
+            
+
+
+
+        </script>
+    </body>
+</html>

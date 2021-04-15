@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">;
+        <title>primeira calculadora</title>            
+
+    </head>
+    <body>
+        <h1>Digite os Dados corretamente</h1>
+        <p>Para zera a calculadora so atualizar a page</p>
+        <script>
+
+            var numeroInicial = prompt('Digite seu primeiro numero...');
+
+            var sinal = prompt('Qual o sinal da sua operação ?');
+            while(sinal != '+' && sinal != '-' && sinal != '/' && sinal != '*'){
+                alert('Por favor insira um sinal real')
+                var sinal = prompt('Qual o sinal da sua operação ?');
+            }
+            var numeroFinal = prompt('Digite seu numero final...');
+
+            numeroInicial = parseInt(numeroInicial);
+            numeroFinal = parseInt(numeroFinal);
+
+            var resultadoFinal = 0;
+
+            if(sinal == '+'){
+                resultadoFinal = numeroInicial + numeroFinal;
+            }else if(sinal == '-'){
+                resultadoFinal = numeroInicial - numeroFinal;
+            }else if(sinal == '/'){
+                resultadoFinal = numeroInicial / numeroFinal;
+            }else if(sinal == '*'){
+                resultadoFinal = numeroInicial * numeroFinal;
+            }
+
+            alert('o resultado é '+ resultadoFinal);
+
+            
+        </script>
+        
+
+    </body>
+
+</html>

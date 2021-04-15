@@ -1,0 +1,103 @@
+<html>
+    <body>
+        <script>
+            /*
+            function Person(name, idade) {
+                this.name = name;
+                this.idade = idade;
+                this.greeting = function() {
+                    alert('hi! i\'m ' + this.name + ' and i have ' + this.idade + ' years.');
+                };
+            }
+
+            var person1 = new Person('bob', 20);
+            var person2 = new Person('Sarah', 40);
+            */ 
+
+            /*
+            function Person(first, last, age, gender, interest) {
+                this.name = {
+                    'first' : first,
+                    'last' : last 
+                };
+                this.age = age
+                this.gender = gender;
+                this.interest = interest;
+                this.bio = function() {
+                    if(this.gender === 'Male'){
+                        alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' year old. He likes ' + this.interest[0] + ' and ' + this.interest[1] + '.')   
+                    }else{
+                        alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' year old. Her likes ' + this.interest[0] + ' and ' + this.interest[1] + '.')   
+                    }
+                };
+                this.greeting = function() {
+                    alert('Hi! I\'m ' + this.name.first + '.');
+                };
+            }
+
+            var person1 = new Person('Bob', 'Smith', 32, 'Male', ['music', 'skiing']);
+            var person2 = new Person('Sarah', 'Kaus', 25, 'Woman', ['Futebol', 'Sexo', 'balada', 'Drugs'])
+
+
+            */
+
+
+            /* 
+            Construtor que resolve o problema de varios interesses e identificar o genero
+            e enviar uma string correspodente.
+            */ 
+
+            function Person(first, last, age, gender, interest) {
+                this.name = {
+                    'first' : first,
+                    'last' : last 
+                };
+                this.age = age;
+                this.gender = gender;
+                this.interest = interest;
+                // solução para diferentes generos
+                this.bio = function() {
+                    var string = this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. ';
+
+                    var pronoun;
+
+                    if(this.gender === 'male' || this.gender === 'Male' || this.gender === 'M' || this.gender === 'm') {
+                        pronoun = 'He likes ';
+                    } else if(this.gender === 'female' || this.gender === 'Female' || this.gender === 'F' || this.gender === 'f') {
+                        pronoun = 'She likes ';
+                    }else{
+                        pronoun = 'They like ';
+                    }
+
+                    string += pronoun;
+                    // solução para varios interesses
+                    if(this.interest.length === 1) {
+                        string += this.interest[0] + '.';
+                    } else if(this.interest.length === 2) {
+                        string += this.interest[0] + ' and ' + this.interest[1] + '.';
+                    } else {
+                        for(var i = 0; i < this.interest.length; i++) {
+                            if(i === this.interest.length - 1) {
+                                string +='and ' + this.interest[i] + '.';
+                            } else {
+                                string += this.interest[i] + ', ';
+                            }
+                        }
+                    }
+
+                    alert(string);
+                };
+                this.greeting = function() {
+                    alert('Hi! I\'m ' + this.name.first + '.');
+                };
+            };
+            /* 
+            Posso cria varios objetos aproveitando o constructor para n precisar varias tarefas repetidas
+            */ 
+           
+            let person1 = new Person('Tammi', 'Smith', 32, 'neutral', ['music', 'skiing', 'kickboxing']);
+            let person2 = new Person('Rafael', 'batista', 21, 'male', ['correr', 'dançar', 'fumar', 'programar', 'curtir']);
+            let person3 = new Person('Carla', 'Dias', 27, 'f', ['atuar', 'rir', 'amar', 'aprender']);
+        </script>
+    </body>
+</html>
