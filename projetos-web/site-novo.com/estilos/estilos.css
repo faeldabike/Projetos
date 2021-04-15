@@ -1,0 +1,56 @@
+html{
+    background-color: black;
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+}
+h1, h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;
+    color: red;
+}
+p{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: black;
+}
+li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: red;
+}
+body{
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    
+}
+button{
+    color: yellow;
+    background-color: red;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+video {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+audio {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
