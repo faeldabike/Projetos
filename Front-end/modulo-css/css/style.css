@@ -1,0 +1,26 @@
+/* seleciona todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+.d1{
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    background-color: blue;
+}
+.d2{
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    background-color: red;
+}
+.d3{
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    background-color: green;
+}
